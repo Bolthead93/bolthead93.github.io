@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body {
+    font-family: "Fredoka";
+    margin: 0;
+}
+
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+
+    .container{
+        align-content: center;
+        background-image: url("/images/TitlePageBackground.png");
+        padding: 40px;
+        }
+    .logo{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        min-width: 250px;
+    }
+    .gameplay-trailer{
+        display: flex;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        max-width: 50%;
+        height: 50%;
+    }
+    .goto-steam{
+        align-content: center;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: inline-flex;
+        background-color: rgb(245, 118, 238);
+        padding: 16px 32px;
+        border-radius: 8px;
+    }
+
+}
