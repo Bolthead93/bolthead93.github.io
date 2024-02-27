@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(72, 160, 189);
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: "Fredoka", verdana;
+    font-size: 40px;
+  }
+
