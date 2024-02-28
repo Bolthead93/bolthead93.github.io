@@ -31,33 +31,31 @@ section {
 }
 .hero .gameplay-trailer {
   display: flex;
-  flex-direction: column;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 20px;
-  height: 75%;
-  width: auto;
-  padding: 40px;
+  max-width: 100%;
 }
-.hero .steam-vid {
-  min-width: auto;
-  height: 100%;
+.hero .gameplay-trailer video {
+  max-width: 100%;
+  height: auto;
 }
 .hero .steam-cta {
   align-content: center;
   margin: auto;
+  padding: 1em 0;
 }
 .hero .button1 {
+  display: flex;
+  max-width: 100%;
   align-content: center;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: center;
   display: inline-flex;
   background-color: var(--pink);
   padding: 8px 16px;
-  font-size: 32px;
+  font-size: clamp(20px, 3vw, 40px);
   border-radius: 8px;
   font-family: "Fredoka";
   color: white;
@@ -78,7 +76,6 @@ section {
   flex-direction: column;
   align-content: center;
   margin: auto;
-  padding: 20px;
 }
 .features-section .container .section-heading {
   display: flex;
@@ -87,7 +84,6 @@ section {
 }
 .features-section .container .feature-info {
   display: grid;
-  position: relative;
   grid-auto-flow: column;
   grid-auto-columns: minmax(0, 1fr);
   align-content: center;
@@ -133,23 +129,33 @@ section {
   flex-direction: column;
   align-content: center;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
 }
 .discord-section .container .section-heading {
   color: rgb(51, 54, 58);
   display: flex;
   margin: auto;
   font-size: 2em;
+  text-align: center;
 }
 .discord-section .container .discord-link {
   margin: auto;
-  display: inline;
+  display: flex;
+  flex-direction: column;
   align-content: center;
-  font-size: 2em;
+  font-size: clamp(16px, 4vw, 22px);
   text-align: center;
 }
 .discord-section .container .discord-link p {
   max-width: 640px;
+  padding: 20px 0;
+}
+.discord-section .container .discord-link div {
+  display: flex;
+  margin: auto;
+}
+.discord-section .container .discord-link .discord-embed {
+  margin: auto;
 }
 
 .copyright {
@@ -157,4 +163,18 @@ section {
   margin: auto;
   align-content: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-section .container .feature-info {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  .features-section .container .feature-info video {
+    grid-row: auto;
+  }
+  .features-section .container .feature-info .right-text {
+    grid-column: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
