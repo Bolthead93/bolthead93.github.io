@@ -23,15 +23,14 @@
       <img class="logo" src="images/Logo.png" alt="Raccoon Roller Logo">
     </div>
     <div class="gameplay-trailer">
-      <video controls autoplay muted>
-        <source src="videos/gameplay-2022.mp4">
+      <video autoplay muted loop controls>
+        <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256875588/movie480_vp9.webm?t=1645791022">
       </video>
     </div>
-    <div class="goto-steam">
-      <a href="https://store.steampowered.com/app/1373980/Raccoon_Roller/">
-        <p class="go">
-          Wishlist on Steam!
-        </p>
+    <div class="steam-cta">
+      <form>
+        <input class="button1" type="button" onclick="window.location.href='https://store.steampowered.com/app/1373980/Raccoon_Roller/';" value="Wishlist on Steam!"/>
+      </form>
       </a>
     </div>
   </div>
@@ -40,26 +39,26 @@
 <section class="features-section">
   <div class="container">
     <div class="section-heading">
-      <h1>Features</h1>
+      <h1>FEATURES</h1>
     </div>
-    <div class=gameplay-info>
-      <video width="500" height="300" autoplay muted loop>
+    <div class=feature-info>
+      <video autoplay muted loop>
         <source src="videos/gameplay.mp4">
       </video>
-      <div class="left-text">
+      <div class="right-text">
         <p>Physics based platforming that challenges mechanical skill and creative thinking</p>
       </div>
     </div>
-    <div class="unlockables-info">
-      <video width="500" height="300" autoplay muted loop>
+    <div class="feature-info">
+      <video autoplay muted loop>
         <source src="videos/unlockables.mp4">
       </video>
-      <div class="right-text">
+      <div class="left-text">
         <p>Unlockable cosmetics and bonus levels through hidden collectables and challenges</p>
       </div>
     </div>
-    <div class="cosmetics-info">
-      <video width="500" height="300" autoplay muted loop>
+    <div class="feature-info">
+      <video autoplay muted loop>
         <source src="videos/speedrun.mp4">
       </video>
       <div class="right-text">
@@ -69,21 +68,26 @@
   </div>
 </section>
 
-<section class="discord-section"></section>
+<section class="discord-section">
   <div class="container">
-    <div class="discord-left">
-      <iframe src="https://discord.com/widget?id=857631872263913482&theme=dark" width="400" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <div class="section-heading">
+      <h1>JOIN THE DISCORD</h1>
     </div>
-    <div class="discord-right">
-      <p>Join the discord to keep up to date with development and share your ideas & feedback</p>
+    <div class="discord-link">
+      <div>
+        <p>Join the discord to keep up to date with development and share your ideas & feedback</p>
+      </div>
+      <div>
+        <iframe src="https://discord.com/widget?id=857631872263913482&theme=dark" width="400" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
     </div>
   </div>
+</section>
 
-<p class=.fredoka>Raccoon Roller site now</p>
+<section class="copyright">
+  <p class=.fredoka>Copyright © 2021 Ribcat Games - All Rights Reserved.</p>
+</section>
 
 
 </body>
-
-
-  
 </html>
